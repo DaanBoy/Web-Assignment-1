@@ -164,12 +164,20 @@ p.item-price {
     max-width: 20%;
 }
 
+.category {
+    height: fit-content;
+}
+
 .open-category {
     display: none;
 }
 
 .category:hover .open-category {
     display:block;
+}
+
+.review {
+    height: fit-content;
 }
 
 .open-review {
@@ -181,5 +189,10 @@ p.item-price {
 }
 
 .price-input {
-    display:
+    display: inline-block;
+    width: 4em;
+}
+
+.price p {
+    display: inline-block;
 }
