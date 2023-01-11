@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <title>Document</title>
+</head>
+
+<header>
+    <nav>
+        <div class="links">
+            <a href="catalog.html">Catalog</a>
+            <a href="">Seller</a>
+        </div>
+
+
+        <div class="nav-icons">
+            <a href="cart.html" class="nav-icon">
+                <img src="../Images/shopping-cart-icon.png" class="nav-icon-image">
+            </a>
+            <a href="nav-bar.html" class="nav-icon">
+                <img src="../Images/user-icon.png" class="nav-icon-image">
+            </a>
+            <a href="nav-bar.html" class="nav-icon"><img src="../Images/log-out-icon.png" class="nav-icon-image"></a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="filter-container">
+
+        <div class="search-container">
+            <p>Search product:</p>
+            <input type="text" class="search-bar">
+        </div>
+
+        <div class="filters">
+            <div class="category filter">
+                <h2>Category</h2>
+                <div class="open-category">
+                    <input type="checkbox" id="appliances">
+                    <label for="appliances">Appliances</label>
+                    <input type="checkbox" id="books">
+                    <label for="books">Books</label>
+                    <input type="checkbox" id="furniture">
+                    <label for="furniture">Furniture</label>
+                </div>
+            </div>
+
+            <div class="supplier filter">
+                <h2>Supplier</h2>
+                <input type="text" name="" id="supplier">
+                <button class="search-supplier">Search</button>
+            </div>
+
+            <div class="review filter">
+                <h2>Review</h2>
+                <div class="open-review">
+                    <input type="checkbox" name="" id="0star">
+                    <label for="0star">0⭐</label>
+                    <input type="checkbox" name="" id="1star">
+                    <label for="1star">1⭐</label>
+                    <input type="checkbox" name="" id="2star">
+                    <label for="2star">2⭐</label>
+                    <input type="checkbox" name="" id="3star">
+                    <label for="3star">3⭐</label>
+                    <input type="checkbox" name="" id="4star">
+                    <label for="4star">4⭐</label>
+                    <input type="checkbox" name="" id="5star">
+                    <label for="5star">5⭐</label>
+                </div>
+            </div>
+
+            <div class="price filter">
+                <h2>Price</h2>
+                <p>Min:</p>
+                <input type="text" class="price-input">
+                <p>Max:</p>
+                <input type="text" class="price-input">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="catalog-container">
+        <div class="item">
+            <div class="item-info">
+                <img src="../Images/coffee-machine.jpg" alt="" class="item-image">
+                <div class="item-text">
+                    <h1 class="item-title">Coffee Machine</h1>
+                    <p class="item-price">€150</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
