@@ -189,8 +189,19 @@ p.item-price {
     display: none;
 }
 
+@keyframes fade-in {
+    0% {opacity: 0;
+        position: relative;
+        top: -1em;
+    }
+    100% {opacity: 1;
+        position: relative;
+        top: 0em;}
+}
+
 .category:hover .open-category {
     display:block;
+    animation: fade-in 0.5s;
 }
 
 .review {
@@ -202,7 +213,8 @@ p.item-price {
 }
 
 .review:hover .open-review {
-    display: block
+    display: block;
+    animation: fade-in 0.5s;
 }
 
 .price-input {
