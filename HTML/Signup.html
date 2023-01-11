@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Singup.css">
+    <title>Document</title>
+</head>
+<body class="background">
+    <!--The "box" in the middle were the form is-->
+    <div class="center center-style">
+        <h1 class="sign-up">Sign Up</h1>
+
+        <!--The form itself where they can input the username and password-->
+        <form class="form">
+            <!-- General-->
+            <label for="email">Email</label> <br>
+            <input type="email" class="input" placeholder="Email"> <br>
+
+            <label for="username">Username</label> <br>
+            <input type="text" class="input" placeholder="Username"> <br>
+
+            <label for="password">Password</label> <br>
+            <input type="password" class="input" placeholder="Password"> <br>
+            <input type="password" class="input" placeholder="Confirm Password"> <br>
+
+            <label for="full_name">Full Name</label> <br>
+            <input type="text" class="input name" placeholder="First Name">
+            <input type="text" class="input name" placeholder="Last Name"> <br>
+
+            <label for="gender">Gender</label> <br>
+            <div class="input dropdown">
+
+            </div>
+
+            <!-- Address-->
+            <label for="address">Address</label> <br>
+            <input type="text" class="input" placeholder="Address"> <br>
+            <input type="text" class="input zipcode" placeholder="Zipcode">
+            <input type="text" class="input housenumber" placeholder="Housenumber"> <br>
+
+            <!-- Bankdetails-->
+            <label for="bankdetails">Bankdetails</label> <br>
+            <input type="text" class="input" placeholder="Bank Number"> <br>
+
+            <!-- Bio-->
+            <label for="bio">Bio</label> <br>
+            <textarea name="bio" class="input textarea" cols="30" rows="10"></textarea> <br>
+
+            <!-- Submit button-->
+            <input type="submit" class="create-account" value="Create Account"> <br>
+            
+            <!--The bottom side letting them go to the sign-up page-->
+            <div class="login">
+                <h2 class="no-account">Already have an account?</h2>
+                <a href="Login.html"><em>Log in</em></a>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>

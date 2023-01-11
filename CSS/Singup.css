@@ -1,0 +1,113 @@
+/* The background Image*/
+.background {
+    background-image: url(../Images/login_signup_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    
+}
+
+/* The center div */
+.center {
+    width: 30em;
+    height: 40em;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow-y: auto;
+    overflow: -moz-scrollbars-none;
+}
+
+.center::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+.center-style {
+    border-color: black;
+    border-style: solid;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 3em;
+}
+
+/* login text */
+
+.sign-up {
+    text-align: center;
+    font-size: 2.25em;
+}
+
+/* The form */
+.form {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.input {
+    background-color: white;
+    border-radius: 2em;
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.dropdown {
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    border-style: solid;
+    width: 33%;
+}
+
+.name {
+    width: 22%;
+}
+
+.zipcode {
+    width: 25%;
+}
+
+.housenumber {
+    width: 18%;
+}
+
+.textarea{
+    text-align: left;
+    resize: none;
+}
+
+/* Create account */
+.create-account {
+    background-color: rgb(255, 255, 255, 0);
+    border-radius: 2em;
+    width: 33%;
+    padding: 1em;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.create-account:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* The bottom sign-up */
+.login {
+    margin-top: 6em;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.no-account {
+    font-size: 1em;
+}
