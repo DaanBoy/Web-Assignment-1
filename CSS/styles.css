@@ -165,12 +165,25 @@ p.item-price {
 .category h2,
 .review h2  {
     display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 2px 0 -100% black;
+}
+
+.category:hover h2,
+.review:hover h2 {
+    box-shadow: 0 2px 0 0 black;
 }
 
 .filter {
     display: inline-block;
     width: 20%;
     max-width: 20%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
 }
 
 .search-bar {
