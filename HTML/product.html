@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,30 +29,20 @@
 </header>
 
 <body>
-    <div class="cart-container">
-        <div class="item">
-            <div class="item-info">
-                <a href="product.html" class="product-link"><img src="../Images/coffee-machine.jpg" alt="" class="item-image"></a>
-                <div class="item-text">
-                    <a href="product.html" class="product-link">
-                        <h1 class="item-title">Coffee Machine</h1>
-                    </a>
-                    <p class="item-price">€150</p>
-                </div>
+    <div class="product-container">
+        <div class="product-grid">
+            <img src="../Images/coffee-machine.jpg" alt="" class="product-image">
+            <div class="primary-info">
+                <h1>Coffee Machine</h1>
+                <p class="product-price">€150</p>
+                <button class="add-cart">Add to cart <img src="../Images/shopping-cart-icon.png" alt="" class="cart-button-image"></button>
             </div>
-            <div class="quantity">
-                <button class="quantity-button">-</button>
-                <input type="text" value="1" class="quantity-input">
-                <button class="quantity-button">+</button>
+            <div class="description">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis deleniti alias adipisci quae beatae voluptates ea iusto ullam dolore aperiam quam optio, vel sapiente consectetur, vero aliquid suscipit sit illum?</p>
+                <p>
             </div>
-            <p class="item-total">€150</p>
-        </div>
-
-        <div class="total-container">
-            <p class="cart-total">Total price: €150</p>
-            <button class="checkout">Check out</button>
         </div>
     </div>
 </body>
-
 </html>
