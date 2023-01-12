@@ -162,6 +162,11 @@ p.item-price {
     width: 100%;
 }
 
+.category h2,
+.review h2  {
+    display: inline-block;
+}
+
 .filter {
     display: inline-block;
     width: 20%;
@@ -185,7 +190,8 @@ p.item-price {
     height: fit-content;
 }
 
-.open-category {
+.open-category,
+.open-review {
     display: none;
 }
 
@@ -199,22 +205,26 @@ p.item-price {
         top: 0em;}
 }
 
-.category:hover .open-category {
+.category:hover .dropdown-icon,
+.review:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.category:hover .open-category,
+.review:hover .open-review {
     display:block;
     animation: fade-in 0.5s;
 }
 
+.dropdown-icon {
+    display: inline-block;
+    height: 0.75em;
+    width: 1.5em;
+    transition: 0.5s;
+}
+
 .review {
     height: fit-content;
-}
-
-.open-review {
-    display: none;
-}
-
-.review:hover .open-review {
-    display: block;
-    animation: fade-in 0.5s;
 }
 
 .price-input {
