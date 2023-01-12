@@ -1,0 +1,174 @@
+body {
+    background-color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+nav {
+    background: linear-gradient(45deg, rgb(48, 93, 160) 0 13em, rgb(66, 134, 235) 13em 100%);
+    /* rgb(66, 134, 235); */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav a {
+    color: white;
+    font-size: 1em;
+    margin: 0 0.5em;
+}
+
+.links a {
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 1.5px 0 -100% white;
+}
+
+.links a:hover {
+    box-shadow: 0 1.5px 0 0 white;
+}
+
+
+.nav-icon-image {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+}
+
+.nav-icon {
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.2s;
+    width: 3em;
+    height: 3em;
+}
+
+.nav-icon:hover {
+    background-color: rgb(155, 188, 249);
+}
+
+/* The Main part */
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+/* The left side */
+.side-bar {
+    width: 20%;
+    float: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-right-style: solid;
+
+}
+
+.button {
+    background-color: rgb(255, 255, 255, 0.75);
+    border-radius: 2em;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+    transition: 0.2s;
+    margin-top: 2em;
+}
+
+.button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* The right side */
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 50em;
+    height: 40em;
+    border-color: black;
+    border-style: solid;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 3em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* The header */
+.top {
+    text-align: center;
+    align-self: center;
+}
+
+/* The form */
+.middle {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+}
+
+.left {
+    flex: 1;
+    padding: 1em;
+}
+
+.right {
+    flex: 1;
+    padding: 1em;
+}
+
+.input {
+    background-color: white;
+    border-radius: 2em;
+    width: 50%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+
+.textarea{
+    text-align: left;
+    resize: none;
+    width: 50%;
+    height: auto;
+    border-radius: 2em;
+}
+.address {
+    margin-bottom: 1em;
+}
+
+.zipcode {
+    width: 25%;
+}
+
+.housenumber {
+    width: 18%;
+}
+
+/* The submit part */
+.bottom {
+    align-self: center;
+}
+
+.submit {
+    background-color: rgb(255, 255, 255);
+    border-radius: 2em;
+    width: 33%;
+    padding: 1em;
+    text-align: center;
+    transition: 0.2s;
+    align-self: center;
+    margin: 1em;
+}
