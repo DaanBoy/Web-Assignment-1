@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../CSS/Singup.css">
     <title>Document</title>
 </head>
+
 <body class="background">
     <!--The "box" in the middle were the form is-->
     <div class="center center-style">
@@ -31,7 +33,18 @@
 
             <label for="gender">Gender</label> <br>
             <div class="input dropdown">
-
+                <div class="dropdown-text">
+                    <p id="gender-chosen">Male</p>
+                    <img src="../Images/dropdown-icon.png" alt="" class="dropdown-icon black">
+                </div>
+                <div class="dropdown-open">
+                    <input type="radio" name="gender-option" id="male" onclick="selectGender()">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender-option" id="female" onclick="selectGender()">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender-option" id="other" onclick="selectGender()">
+                    <label for="other">Other</label>
+                </div>
             </div>
 
             <!-- Address-->
@@ -50,7 +63,7 @@
 
             <!-- Submit button-->
             <input type="submit" class="create-account" value="Create Account"> <br>
-            
+
             <!--The bottom side letting them go to the sign-up page-->
             <div class="login">
                 <h2 class="no-account">Already have an account?</h2>
@@ -60,5 +73,16 @@
 
     </div>
 
+    <script>
+        selectGender();
+        function selectGender() {
+            let checkedBox = document.querySelector('div.dropdown input[type="radio"][name="gender-option"]:checked');
+            if (checkedBox.id === "male") document.getElementById("gender-chosen").innerText = "Male";
+            else if (checkedBox.id === "female") document.getElementById("gender-chosen").innerText = "Female";
+            else document.getElementById("gender-chosen").innerText = "Other";
+        }
+    </script>
+
 </body>
+
 </html>
