@@ -48,6 +48,9 @@
     padding: 1em;
     margin-bottom: 1.5em;
     text-align: center;
+    border-style:inset;
+    border-width: 2px;
+    border-color: grey; 
 }
 
 .submit {
