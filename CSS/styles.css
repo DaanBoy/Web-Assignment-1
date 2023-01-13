@@ -4,6 +4,8 @@
     --light-primary-color: rgb(155, 188, 249);
     --secondary-color: rgb(48, 93, 160);
     --third-color: #fdb44b;
+    --third-color-light: #fac377;
+    --third-color-dark: #fbaa38;
 }
 
 body {
@@ -124,6 +126,7 @@ p.item-price {
     width: var(--standard-size);
     height: var(--standard-size);
     font-size: var(--standard-size);
+    cursor: pointer;
 }
 
 .quantity-input {
@@ -152,6 +155,7 @@ p.item-price {
     border-color: var(--secondary-color);
     padding: 0.5em;
     text-align: center;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -317,6 +321,17 @@ p.item-price {
     border-radius: 2em;
     padding: 0.5em;
     font-size: var(--standard-size);
+    border-color: var(--third-color-dark);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-cart:hover {
+    background-color: var(--third-color-light);
+}
+
+.add-cart:active {
+    background-color: var(--third-color-dark);
 }
 
 .cart-button-image {

@@ -37,7 +37,7 @@
             <form method="POST" action="Seller-home.html" class="add-item-form">
                 <div class="name-container">
                     <label for="name">Product name</label>
-                    <input type="text" id="name" class="add-item-input">
+                    <input type="text" id="name" class="add-item-input" placeholder="Prodcut name">
                 </div>
 
                 <div class="file-container">
@@ -47,19 +47,29 @@
 
                 <div class="price-container">
                     <label for="price">Price</label>
-                    <input type="text" id="price" class="add-item-input">
+                    <input type="text" id="price" class="add-item-input" placeholder="Price">
                 </div>
 
                 <div class="quantity-container">
                     <label for="quantity">Quantity</label>
-                    <input type="text" id="quantity" class="add-item-input">
+                    <input type="text" id="quantity" class="add-item-input" placeholder="Quantity">
                 </div>
 
                 <div class="category-container">
                     <label for="category">Category</label>
                     <div class="category">
-                        <div class="category-chosen"></div>
-                        <div class="dropdown-open"></div>
+                        <div class="category-text">
+                            <p id="category-chosen">None</p>
+                            <img src="../Images/dropdown-icon.png" alt="" class="dropdown-icon black">
+                        </div>
+                        <div class="dropdown-open">
+                            <input type="radio" id="appliances" name="category-option" onclick="selectChosenCategory()">
+                            <label for="appliances">Appliances</label>
+                            <input type="radio" id="books" name="category-option" onclick="selectChosenCategory()">
+                            <label for="books">Books</label>
+                            <input type="radio" id="furniture" name="category-option" onclick="selectChosenCategory()">
+                            <label for="furniture">Furniture</label>
+                        </div>
                     </div>
                 </div>
 
@@ -75,5 +85,24 @@
         </div>
     </div>
 </body>
+
+<script>
+    function selectChosenCategory(){
+        let checked = document.querySelector('input[type="radio"][name="category-option"]:checked');
+        let category;
+        switch (checked.id) {
+            case "appliances":
+                category = "Appliances";
+                break;
+            case "books":
+                category = "Books";
+                break;
+            case "furniture":
+                category = "Furniture";
+                break;
+        }
+        document.getElementById("category-chosen").innerText = category;
+    }
+</script>
 
 </html>
