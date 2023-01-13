@@ -1,0 +1,120 @@
+:root {
+    --standard-size: 1.25em;
+    --primary-color: rgb(66, 134, 235);
+    --light-primary-color: rgb(155, 188, 249);
+    --secondary-color: rgb(48, 93, 160);
+    --third-color: #fdb44b;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+nav {
+    background: linear-gradient(45deg, var(--secondary-color) 0 13em, var(--primary-color) 13em 100%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav a {
+    color: white;
+    font-size: 1em;
+    margin: 0 0.5em;
+}
+
+.links a {
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 1.5px 0 -100% white;
+}
+
+.links a:hover {
+    box-shadow: 0 1.5px 0 0 white;
+}
+
+
+.nav-icon-image {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin: 0.5em;
+}
+
+.nav-icon {
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.2s;
+    width: 3em;
+    height: 3em;
+}
+
+.nav-icon:hover {
+    background-color: var(--light-primary-color);
+}
+
+.add-item-container {
+    display: flex;
+    justify-content: center;
+}
+
+.add-item-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.add-item-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.file-container,
+.name-container,
+.price-container,
+.quantity-container,
+.category-container,
+.description-container,
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+}
+
+.category-container,
+.description-container,
+.submit-container {
+    grid-column: span 2;
+}
+
+.add-item-input {
+    background-color: white;
+    border-radius: 2em;
+    width: 50%;
+    padding: 1em;
+    margin: 1em 0;
+    text-align: center;
+    border-style: inset;
+    border-width: 2px;
+    border-color: grey;
+}
+
+#add-file {
+    margin: 1em 0;
+}
+
+#description {
+    resize: none;
+    border-radius: 2em;
+    border-style: inset;
+    border-width: 2px;
+    border-color: grey;
+    padding: 2em;
+}

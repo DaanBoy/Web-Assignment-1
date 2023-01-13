@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/add-item.css">
+
+</head>
+
+<header>
+    <nav>
+        <div class="links">
+            <a href="catalog.html">Catalog</a>
+            <a href="Seller-home.html">Seller</a>
+        </div>
+
+
+        <div class="nav-icons">
+            <a href="cart.html" class="nav-icon">
+                <img src="../Images/shopping-cart-icon.png" class="nav-icon-image">
+            </a>
+            <a href="Account.html" class="nav-icon">
+                <img src="../Images/user-icon.png" class="nav-icon-image">
+            </a>
+            <a href="../index.html" class="nav-icon"><img src="../Images/log-out-icon.png" class="nav-icon-image"></a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="add-item-container">
+        <div class="add-item-box">
+            <h1 class="add-item-title">Add Item</h1>
+            <form method="POST" action="Seller-home.html" class="add-item-form">
+                <div class="name-container">
+                    <label for="name">Product name</label>
+                    <input type="text" id="name" class="add-item-input">
+                </div>
+
+                <div class="file-container">
+                    <label for="add-file">Choose a preview image</label>
+                    <input type="file" name="" id="add-file">
+                </div>
+
+                <div class="price-container">
+                    <label for="price">Price</label>
+                    <input type="text" id="price" class="add-item-input">
+                </div>
+
+                <div class="quantity-container">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="quantity" class="add-item-input">
+                </div>
+
+                <div class="category-container">
+                    <label for="category">Category</label>
+                    <div class="category">
+                        <div class="category-chosen"></div>
+                        <div class="dropdown-open"></div>
+                    </div>
+                </div>
+
+                <div class="description-container">
+                    <label for="description">Description</label>
+                    <textarea id="description" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="submit-container">
+                    <input type="submit" id="submit-item" value="Add Item">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
