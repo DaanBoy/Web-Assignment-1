@@ -85,6 +85,7 @@ nav a {
     justify-content: center;
     background-color: var(--primary-color);
     color: white;
+    cursor: pointer;
     transition: 0.2s;
 }
 
