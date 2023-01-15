@@ -8,6 +8,10 @@
     --third-color-dark: #fbaa38;
 }
 
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: white;
     margin: 0;

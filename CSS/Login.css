@@ -1,3 +1,7 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* The background Image*/
 .background {
     background-image: url(../Images/login_signup_background.jpg);

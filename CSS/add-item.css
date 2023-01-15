@@ -1,3 +1,7 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 :root {
     --standard-size: 1.25em;
     --primary-color: rgb(66, 134, 235);
