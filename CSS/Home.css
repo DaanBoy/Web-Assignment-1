@@ -2,6 +2,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    margin: 0;
+}
 /* The background Image*/
 .background {
     background-image: url(../Images/login_signup_background.jpg);
@@ -50,6 +53,7 @@
     padding: 1em;
     text-align: center;
     transition: 0.2s;
+    margin-bottom: 1em;
 }
 
 .button:hover {
