@@ -154,22 +154,22 @@ p.item-price {
 
 .checkout {
     font-size: var(--standard-size);
-    background-color: var(--primary-color);
     border-radius: 2em;
-    border-color: var(--secondary-color);
     padding: 0.5em;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
+    background-color: var(--third-color);
+    border-color: var(--third-color-dark);
 }
 
 .checkout:hover {
-    background-color: var(--light-primary-color);
+    background-color: var(--third-color-light);
     transition: 0s ease-in-out 0s ease-in-out;
 }
 
 .checkout:active {
-    background-color: var(--secondary-color);
+    background-color: var(--third-color-dark);
     transition: 0s ease-in-out 0s ease-in-out;
 }
 
