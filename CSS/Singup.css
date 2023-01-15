@@ -4,7 +4,7 @@
 
 /* The background Image*/
 .background {
-    background-image: url(../Images/login_signup_background.jpg);
+    background-image: url(../Images/login_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
