@@ -82,6 +82,11 @@ p#gender-chosen {
     display: inline-block;
 }
 
+p#language-chosen {
+    margin: 0px;
+    display: inline-block;
+}
+
 @keyframes fade-in {
     0% {opacity: 0;
         position: relative;
