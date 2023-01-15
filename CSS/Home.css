@@ -5,6 +5,16 @@
 body {
     margin: 0;
 }
+
+:root {
+    --standard-size: 1.25em;
+    --primary-color: rgb(66, 134, 235);
+    --light-primary-color: rgb(155, 188, 249);
+    --secondary-color: rgb(48, 93, 160);
+    --third-color: #fdb44b;
+    --third-color-light: #fac377;
+    --third-color-dark: #fbaa38;
+}
 /* The background Image*/
 .background {
     background-image: url(../Images/background-home.jpg);
@@ -47,18 +57,25 @@ body {
 
 .button {
     margin-top: auto;
-    background-color: rgb(255, 255, 255, 0.75);
     border-radius: 2em;
     width: 50%;
     padding: 1em;
     text-align: center;
     transition: 0.2s;
     margin-bottom: 1em;
+    background-color: var(--third-color);
+    border-color: var(--third-color-dark);
+    cursor: pointer;
+    transition: 0.2s;
+
 }
 
 .button:hover {
-    background-color: white;
-    cursor: pointer;
+    background-color: var(--third-color-light);
+}
+
+.button:active {
+    background-color: var(--third-color-dark);
 }
 
 

@@ -2,6 +2,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+    --standard-size: 1.25em;
+    --primary-color: rgb(66, 134, 235);
+    --light-primary-color: rgb(155, 188, 249);
+    --secondary-color: rgb(48, 93, 160);
+    --third-color: #fdb44b;
+    --third-color-light: #fac377;
+    --third-color-dark: #fbaa38;
+}
+
 /* The background Image*/
 .background {
     background-image: url(../Images/login_background.jpg);
@@ -143,17 +153,23 @@ p#language-chosen {
 
 /* Create account */
 .create-account {
-    background-color: rgb(255, 255, 255, 0);
     border-radius: 2em;
     width: 33%;
     padding: 1em;
     text-align: center;
     transition: 0.2s;
+    background-color: var(--third-color);
+    border-color: var(--third-color-dark);
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .create-account:hover {
-    background-color: white;
-    cursor: pointer;
+    background-color: var(--third-color-light);
+}
+
+.create-account:active {
+    background-color: var(--third-color-dark);
 }
 
 /* The bottom sign-up */
