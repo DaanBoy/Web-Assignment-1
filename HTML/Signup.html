@@ -53,6 +53,21 @@
             <input type="text" class="input zipcode" placeholder="Zipcode">
             <input type="text" class="input housenumber" placeholder="Housenumber"> <br>
 
+            <!-- Language-->
+            <label for="language">Language</label> <br>
+            <div class="input dropdown">
+                <div class="dropdown-text">
+                    <p id="language-chosen">Dutch</p>
+                    <img src="../Images/dropdown-icon.png" alt="" class="dropdown-icon black">
+                </div>
+                <div class="dropdown-open">
+                    <input type="radio" name="language-option" id="dutch" onclick="selectLanguage()" checked>
+                    <label for="dutch">Dutch</label>
+                    <input type="radio" name="language-option" id="english" onclick="selectLanguage()">
+                    <label for="english">English</label>
+                </div>
+            </div>
+
             <!-- Bankdetails-->
             <label for="bankdetails">Bankdetails</label> <br>
             <input type="text" class="input" placeholder="Bank Number"> <br>
@@ -80,6 +95,13 @@
             if (checkedBox.id === "male") document.getElementById("gender-chosen").innerText = "Male";
             else if (checkedBox.id === "female") document.getElementById("gender-chosen").innerText = "Female";
             else document.getElementById("gender-chosen").innerText = "Other";
+        }
+
+        selectLanguage();
+        function selectLanguage() {
+            let checkedBox = document.querySelector('div.dropdown input[type="radio"][name="language-option"]:checked');
+            if (checkedBox.id === "dutch") document.getElementById("language-chosen").innerText = "Dutch";
+            else document.getElementById("language-chosen").innerText = "English";
         }
     </script>
 
