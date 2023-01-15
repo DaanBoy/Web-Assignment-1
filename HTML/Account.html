@@ -39,17 +39,30 @@
 
                 <form class="middle" action="">
                     <div class="left">
-                        <label for="full_name">Full Name</label> <br>
-                        <input type="text" class="input" placeholder="Full Name"> <br>
+                        <label for="full_name">Full Name</label> 
+                        <input type="text" class="input" placeholder="Full Name"> 
+                        <label for="username">Username</label> 
+                        <input type="text" class="input" placeholder="Username">
 
-                        <label for="username">Username</label> <br>
-                        <input type="text" class="input" placeholder="Username"> <br>
+                        <label for="email">Email</label>
+                        <input type="email" class="input" placeholder="Email">
 
-                        <label for="email">Email</label> <br>
-                        <input type="email" class="input" placeholder="Email"> <br>
+                        <label for="language">Language</label>
+                        <div class="input dropdown">
+                            <div class="dropdown-text">
+                                <p id="language-chosen">Dutch</p>
+                                <img src="../Images/dropdown-icon.png" alt="" class="dropdown-icon black">
+                            </div>
+                            <div class="dropdown-open">
+                                <input type="radio" name="language-option" id="dutch" onclick="selectLanguage()" checked>
+                                <label for="dutch">Dutch</label>
+                                <input type="radio" name="language-option" id="english" onclick="selectLanguage()">
+                                <label for="english">English</label>
+                            </div>
+                        </div>
 
-                        <label for="bio">Bio</label> <br>
-                        <textarea name="bio" class="textarea" cols="30" rows="10"></textarea> <br>
+                        <label for="bio">Bio</label>
+                        <textarea name="bio" class="textarea" cols="30" rows="10"></textarea> 
 
                     </div>
                     <div class="right">
@@ -65,11 +78,9 @@
                         <input type="password" class="input" placeholder="Old Password"> <br>
                         <input type="password" class="input" placeholder="New Password"> <br>
                         <input type="password" class="input" placeholder="Confirm New Password"> <br>
-
+                        <input type="submit" class="submit button" value="Save">
                     </div>
                 </form>
-
-                <input type="bottom submit" class="submit" value="Save">
             </div>
         </div>
 
