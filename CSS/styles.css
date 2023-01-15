@@ -86,7 +86,7 @@ h1.item-title {
     margin: 0;
 }
 
-h1.item-titel:hover {
+h1.item-title:hover {
     color: var(--primary-color);
 }
 
