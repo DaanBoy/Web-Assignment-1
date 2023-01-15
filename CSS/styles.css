@@ -86,6 +86,10 @@ h1.item-title {
     margin: 0;
 }
 
+h1.item-titel:hover {
+    color: var(--primary-color);
+}
+
 .product-link {
     color: black;
     text-decoration: none;
