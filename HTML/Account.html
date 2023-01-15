@@ -30,8 +30,8 @@
 
     <div class="main">
         <div class="side-bar">
-            <button class="button">Personal Info</button>
-            <button class="button">Order History</button>
+            <button class="button link">Personal Info</button>
+            <button class="button link">Order History</button>
         </div>
         <div class="content">
             <div class="center">
@@ -85,6 +85,15 @@
         </div>
 
     </div>
+
+    <script>
+        selectLanguage();
+        function selectLanguage() {
+            let checkedBox = document.querySelector('div.dropdown input[type="radio"][name="language-option"]:checked');
+            if (checkedBox.id === "dutch") document.getElementById("language-chosen").innerText = "Dutch";
+            else document.getElementById("language-chosen").innerText = "English";
+        }
+    </script>
 
 
 </body>

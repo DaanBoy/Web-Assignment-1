@@ -157,7 +157,6 @@ p#language-chosen {
     width: 33%;
     padding: 1em;
     text-align: center;
-    transition: 0.2s;
     background-color: var(--third-color);
     border-color: var(--third-color-dark);
     cursor: pointer;

@@ -2,10 +2,23 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+    --standard-size: 1.25em;
+    --primary-color: rgb(66, 134, 235);
+    --light-primary-color: rgb(155, 188, 249);
+    --secondary-color: rgb(48, 93, 160);
+    --third-color: #fdb44b;
+    --third-color-light: #fac377;
+    --third-color-dark: #fbaa38;
+}
+
+
+html {
+    height: 100%;
+}
 body {
     background-color: white;
     margin: 0;
-    height: 100vh;
 }
 
 nav {
@@ -74,8 +87,23 @@ nav a {
 
 }
 
+.link {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    
+}
+
+.link:hover {
+    background-color: var(--light-primary-color);
+}
+
+.link:active {
+    background-color: var(--secondary-color);
+}
+
 .button {
-    background-color: rgb(255, 255, 255, 0.75);
     border-radius: 2em;
     width: 50%;
     padding: 1em;
@@ -83,12 +111,6 @@ nav a {
     transition: 0.2s;
     margin-top: 2em;
 }
-
-.button:hover {
-    background-color: white;
-    cursor: pointer;
-}
-
 /* The right side */
 .content {
     height: 100%;
@@ -99,7 +121,6 @@ nav a {
 
 .center {
     width: 50em;
-    height: 40em;
     border-color: black;
     border-style: solid;
     background-color: rgba(255,255,255,0.9);
@@ -196,6 +217,7 @@ p#language-chosen {
     width: 50%;
     height: auto;
     border-radius: 2em;
+    padding: 1em;
 }
 .address {
     margin-bottom: 1em;
@@ -215,12 +237,20 @@ p#language-chosen {
 }
 
 .submit {
-    background-color: rgb(255, 255, 255);
     border-radius: 2em;
     width: 33%;
     padding: 1em;
     text-align: center;
+    background-color: var(--third-color);
+    border-color: var(--third-color-dark);
+    cursor: pointer;
     transition: 0.2s;
-    align-self: center;
-    margin: 1em;
+}
+
+.submit:hover {
+    background-color: var(--third-color-light);
+}
+
+.submit:active {
+    background-color: var(--third-color-dark);
 }
