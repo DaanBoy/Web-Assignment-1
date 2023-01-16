@@ -98,7 +98,9 @@ body {
     margin: 2em;
 }
 
-
+.feature-icon {
+    width: 50%;
+}
 
 .text-header{
     font-weight: bold;
