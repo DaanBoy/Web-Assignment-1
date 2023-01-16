@@ -57,16 +57,16 @@
             <label for="country">Country</label> <br>
             <div class="input dropdown">
                 <div class="dropdown-text">
-                    <p id="country-chosen">🇳🇱The Netherlands</p>
+                    <p id="country-chosen">The Netherlands</p>
                     <img src="../Images/dropdown-icon.png" alt="" class="dropdown-icon black">
                 </div>
                 <div class="dropdown-open">
                     <input type="radio" name="country-option" id="netherlands" onclick="selectCountry()" checked>
-                    <label for="dutch">🇳🇱The Netherlands</label>
+                    <label for="dutch">The Netherlands</label>
                     <input type="radio" name="country-option" id="usa" onclick="selectCountry()">
-                    <label for="usa">🇺🇸USA</label>
+                    <label for="usa">USA</label>
                     <input type="radio" name="country-option" id="uk" onclick="selectCountry()">
-                    <label for="uk">🇬🇧UK</label>
+                    <label for="uk">UK</label>
                 </div>
             </div>
 
@@ -124,9 +124,9 @@
         selectCountry();
         function selectCountry() {
             let checkedBox = document.querySelector('div.dropdown input[type="radio"][name="country-option"]:checked');
-            if (checkedBox.id === "netherlands") document.getElementById("country-chosen").innerText = "🇳🇱The Netherlands";
-            else if (checkedBox.id === "usa") document.getElementById("country-chosen").innerText = "🇺🇸USA";
-            else document.getElementById("country-chosen").innerText = "🇬🇧UK";
+            if (checkedBox.id === "netherlands") document.getElementById("country-chosen").innerText = "The Netherlands";
+            else if (checkedBox.id === "usa") document.getElementById("country-chosen").innerText = "USA";
+            else document.getElementById("country-chosen").innerText = "UK";
         }
     </script>
 
